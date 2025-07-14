@@ -9,10 +9,7 @@ Learn how to fetch all tickets by a user.
 ## Request
 
 - **Method**: GET
-- **Endpoint**: `https://tex-resolve-backend.onrender.com/api/v1/tickets/me`
-
-
-
+- **Endpoint**: `https://texresolve-backend.onrender.com/api/v1/tickets/me`
 
 ## Responses
 
@@ -26,8 +23,8 @@ Learn how to fetch all tickets by a user.
       "title": "Bug in login form",
       "description": "The login button does not respond.",
       "attempted_solution": "Cleared cache and cookies, but issue persists.",
-      "tags": ["bug", "frontend"],
-    },
+      "tags": ["bug", "frontend"]
+    }
     // other tickets
   ],
   "totalPages": 5,
@@ -36,7 +33,6 @@ Learn how to fetch all tickets by a user.
 ```
 
 ### Errors
-
 
 ```json title="statusCode 401: Authentication Error"
 {
@@ -55,5 +51,3 @@ Learn how to fetch all tickets by a user.
   "message": "Try again or restart service"
 }
 ```
-
-

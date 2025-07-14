@@ -9,7 +9,7 @@ Learn how to update a meeting by adding a resolver in TexResolve.
 ## Request
 
 - **Method**: PATCH
-- **Endpoint**: `https://tex-resolve-backend.onrender.com/api/v1/meetings/{id}`
+- **Endpoint**: `https://texresolve-backend.onrender.com/api/v1/meetings/{id}`
 
 ### Body Parameters
 

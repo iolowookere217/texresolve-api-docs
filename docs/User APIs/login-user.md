@@ -11,16 +11,17 @@ Learn how to log in as user with TexResolve.
 ## **Request**
 
 - **Method**: `POST`
-- **Endpoint**: `https://tex-resolve-backend.onrender.com/api/v1/login`
+- **Endpoint**: `https://texresolve-backend.onrender.com/api/v1/login`
 
 ### **Body Parameters**
 
-| Parameter | Type   | Description                     |
-|-----------|--------|-----------------------------------|
-| `email`   | String | User email address.              |
-| `password`| String | User password.                  |
+| Parameter  | Type   | Description         |
+| ---------- | ------ | ------------------- |
+| `email`    | String | User email address. |
+| `password` | String | User password.      |
 
 #### Example Request Body:
+
 ```json
 {
   "email": "brockc22@lvintager.com",
@@ -33,6 +34,7 @@ Learn how to log in as user with TexResolve.
 ## **Responses**
 
 ### **Success**
+
 ```jsx title="statusCode 200: Success"
 {
   "success": true,
@@ -48,11 +50,10 @@ Learn how to log in as user with TexResolve.
 The user token will be used to authenticate other user services.
 :::
 
-
 ### **Errors**
 
-
 #### **Invalid Credentials**
+
 ```jsx title="statusCode 400: Internal Server Error"
 Invalid email or password.
 ```
@@ -62,4 +63,3 @@ Try again or restart service.
 ```
 
 ---
-

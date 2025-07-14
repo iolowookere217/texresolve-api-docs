@@ -9,7 +9,7 @@ Learn how to fetch all meetings by a user.
 ## Request
 
 - **Method**: GET
-- **Endpoint**: `https://tex-resolve-backend.onrender.com/api/v1/meetings/me`
+- **Endpoint**: `https://texresolve-backend.onrender.com/api/v1/meetings/me`
 
 ## Responses
 
@@ -25,10 +25,9 @@ Learn how to fetch all meetings by a user.
       "date": "2025-05-20",
       "time": "10:30",
       "meeting_link": "https://us05web.zoom.us/j/86289629132?pwd=MicIHCJMlrVykmk2gyNBIczHXibbxR.1"
-    },
+    }
     // other meetings
-  ],
- 
+  ]
 }
 ```
 

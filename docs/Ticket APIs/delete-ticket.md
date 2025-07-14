@@ -1,22 +1,21 @@
 ---
-sidebar_position: 6
+sidebar_position: 8
 ---
 
-# Delete  Ticket
+# Delete Ticket
 
 Learn how to delete a ticket.
 
 ## Request
 
 - **Method**: DELETE
-- **Endpoint**: `https://tex-resolve-backend.onrender.com/api/v1/user/tickets/id`
+- **Endpoint**: `https://texresolve-backend.onrender.com/api/v1/tickets/id`
 
 ### Query Parameters
 
-| Parameter  | Type   | Description                                                      |
-|------------|--------|------------------------------------------------------------------|
-| `id`     | String | The id of the ticket           |
-
+| Parameter | Type   | Description          |
+| --------- | ------ | -------------------- |
+| `id`      | String | The id of the ticket |
 
 ## Responses
 
@@ -24,12 +23,11 @@ Learn how to delete a ticket.
 
 ```json title="code 200: Success"
 {
-"message": "Ticket and its attachments deleted successfully"
+  "message": "Ticket and its attachments deleted successfully"
 }
 ```
 
 ### Errors
-
 
 ```json title="statusCode 401: Authentication Error"
 {
@@ -48,5 +46,3 @@ Learn how to delete a ticket.
   "message": "Try again or restart service"
 }
 ```
-
-

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # Update Ticket
@@ -9,14 +9,13 @@ Learn how to update a ticket in TexResolve.
 ## Request
 
 - **Method**: PUT
-- **Endpoint**: `https://tex-resolve-backend.onrender.com/api/v1/user/tickets/id`
+- **Endpoint**: `https://texresolve-backend.onrender.com/api/v1/tickets/id`
 
 ### Query Parameters
 
-| Parameter  | Type   | Description                                                      |
-|------------|--------|------------------------------------------------------------------|
-| `id`     | String | The id of the ticket           |
-
+| Parameter | Type   | Description          |
+| --------- | ------ | -------------------- |
+| `id`      | String | The id of the ticket |
 
 ### Body Parameters
 
@@ -37,6 +36,7 @@ Here's an example request body for updating a ticket:
 ```jsx title="updating ticket example"
 {
   "title": "Updated Login Issue",
+  "category": "Software Development",
   "description": "Still unable to log in, even after resetting the password.",
   "attempted_solution": "Checked browser settings and tried incognito mode.",
   "tags": ["login", "authentication", "error"],
@@ -72,4 +72,3 @@ Ticket ID does not exist
 ```jsx title="statusCode 500: Internal Server Error"
 Try again or restart service
 ```
-

@@ -2,21 +2,20 @@
 sidebar_position: 4
 ---
 
-# Get  Tickets Details
+# Get Tickets Details
 
 Learn how to fetch all details of a ticket.
 
 ## Request
 
 - **Method**: GET
-- **Endpoint**: `https://tex-resolve-backend.onrender.com/api/v1/user/tickets/id`
+- **Endpoint**: `https://texresolve-backend.onrender.com/api/v1/tickets/id`
 
 ### Query Parameters
 
-| Parameter  | Type   | Description                                                      |
-|------------|--------|------------------------------------------------------------------|
-| `id`     | String | The id of the ticket           |
-
+| Parameter | Type   | Description          |
+| --------- | ------ | -------------------- |
+| `id`      | String | The id of the ticket |
 
 ## Responses
 
@@ -24,19 +23,17 @@ Learn how to fetch all details of a ticket.
 
 ```json title="code 200: Success"
 {
-  "ticket": 
-    {
-      "_id": "654b68e9c4ab84dcc26ad908",
-      "title": "Bug in login form",
-      "description": "The login button does not respond.",
-      "attempted_solution": "Cleared cache and cookies, but issue persists.",
-      "tags": ["bug", "frontend"],
-    },
+  "ticket": {
+    "_id": "654b68e9c4ab84dcc26ad908",
+    "title": "Bug in login form",
+    "description": "The login button does not respond.",
+    "attempted_solution": "Cleared cache and cookies, but issue persists.",
+    "tags": ["bug", "frontend"]
+  }
 }
 ```
 
 ### Errors
-
 
 ```json title="statusCode 401: Authentication Error"
 {
@@ -55,5 +52,3 @@ Learn how to fetch all details of a ticket.
   "message": "Try again or restart service"
 }
 ```
-
-

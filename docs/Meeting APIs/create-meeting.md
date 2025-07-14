@@ -9,18 +9,18 @@ Learn how to create a meeting in TexResolve.
 ## Request
 
 - **Method**: POST
-- **Endpoint**: `https://tex-resolve-backend.onrender.com/api/v1/meetings`
+- **Endpoint**: `https://texresolve-backend.onrender.com/api/v1/meetings`
 
 ### Body Parameters
 
 - **Meeting Details**: Enter the details for the meeting.
 
-| Parameter   | Type     | Description                                       |
-|-------------|----------|---------------------------------------------------|
-| title       | String   | Title of the meeting                             |
-| ticketId    | String   | Associated ticket ID                             |
-| date        | String   | Date of the meeting (format: YYYY-MM-DD)         |
-| time        | String   | Time of the meeting (format: HH:mm)              |
+| Parameter | Type   | Description                              |
+| --------- | ------ | ---------------------------------------- |
+| title     | String | Title of the meeting                     |
+| ticketId  | String | Associated ticket ID                     |
+| date      | String | Date of the meeting (format: YYYY-MM-DD) |
+| time      | String | Time of the meeting (format: HH:mm)      |
 
 Here's an example request body for creating a meeting:
 

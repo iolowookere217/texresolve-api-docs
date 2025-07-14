@@ -9,7 +9,7 @@ Learn how to fetch a meeting associated with a ticket.
 ## Request
 
 - **Method**: GET
-- **Endpoint**: `https://tex-resolve-backend.onrender.com/api/v1/meetings/ticket/{id}`
+- **Endpoint**: `https://texresolve-backend.onrender.com/api/v1/meetings/ticket/{id}`
 
 ### Path Parameters
 

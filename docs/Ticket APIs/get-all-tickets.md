@@ -9,19 +9,17 @@ Learn how to fetch all tickets with pagination and search functionality.
 ## Request
 
 - **Method**: GET
-- **Endpoint**: `https://tex-resolve-backend.onrender.com/api/v1/tickets`
+- **Endpoint**: `https://texresolve-backend.onrender.com/api/v1/tickets`
 
 ### Query Parameters
 
-| Parameter  | Type   | Description                                                      |
-|------------|--------|------------------------------------------------------------------|
-| `page`     | Number | (Optional) Page number for pagination (default: 1)              |
-| `limit`    | Number | (Optional) Number of tickets per page (default: 10)             |
-| `category`   | String | (Optional) Keyword to search in ticket categories          |
-| `title`   | String | (Optional) Keyword to search in ticket titles or tags          |
-| `tags`     | Array  | (Optional) Filter tickets by one or more tags                   |
-
-
+| Parameter  | Type   | Description                                           |
+| ---------- | ------ | ----------------------------------------------------- |
+| `page`     | Number | (Optional) Page number for pagination (default: 1)    |
+| `limit`    | Number | (Optional) Number of tickets per page (default: 10)   |
+| `category` | String | (Optional) Keyword to search in ticket categories     |
+| `title`    | String | (Optional) Keyword to search in ticket titles or tags |
+| `tags`     | Array  | (Optional) Filter tickets by one or more tags         |
 
 ## Responses
 
@@ -35,8 +33,8 @@ Learn how to fetch all tickets with pagination and search functionality.
       "title": "Bug in login form",
       "description": "The login button does not respond.",
       "attempted_solution": "Cleared cache and cookies, but issue persists.",
-      "tags": ["bug", "frontend"],
-    },
+      "tags": ["bug", "frontend"]
+    }
     // other tickets
   ],
   "totalPages": 5,
@@ -73,4 +71,3 @@ Learn how to fetch all tickets with pagination and search functionality.
 :::tip Pagination tip
 
 Use `page` and `limit` query parameters to navigate through results.
-
